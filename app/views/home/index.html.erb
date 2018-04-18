@@ -1,0 +1,25 @@
+<div class="flexslider">
+  <ul class="slides">
+    <li>
+      <%= image_tag '/slider/img1.jpg', class: 'img-responsive' %>
+    </li>
+    <li>
+      <%= image_tag '/slider/img2.jpg', class: 'img-responsive' %>
+    </li>
+    <li>
+      <%= image_tag '/slider/img3.jpg', class: 'img-responsive'%>
+    </li>
+  </ul>
+</div>
+<div class="container">
+   <div class="row">
+     <% @posts.each do |post|%>
+        <div class="col-sm-4">
+          <h3><%= post.title%></h3>
+          <p><%= truncate(post.content, length: 150, :escape => false) %></p>
+          <%= link_to 'Read More', post_path(post) %>
+        </div>
+     <%end%>
+   </div>
+</div>
+</div>

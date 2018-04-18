@@ -1,0 +1,16 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.nav-tabs{
+  border: none !important;
+}
+.nav-tabs .nav-link {
+  border-radius: .25rem;
+  border-color: #f8f9fa!important;
+}
+.nav-tabs .nav-link:hover {
+  border-color: #f8f9fa!important;
+}
+.nav-tabs .nav-item.show .nav-link{
+  background-color: #f8f9fa!important;
+}
